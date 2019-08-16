@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant"
+        android:text="Could not load"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/requirements_frag_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/buenard"
+        android:text="Could not load. Sorry."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#cd000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
+    <TextView
+        android:id="@+id/URL_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:layout_marginTop="8dp"
+        android:autoLink="web"
+        android:fontFamily="@font/assistant"
+        android:text="URL could not be loaded. Sorry."
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/requirements_text_view" />
+
+
+</android.support.constraint.ConstraintLayout>
