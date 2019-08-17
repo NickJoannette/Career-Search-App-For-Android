@@ -41,34 +41,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/jobsLogo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="8sp"
-                android:text="Jobs"
-                android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/statsLogo"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-            <ImageView
-                android:id="@+id/filterIcon"
-                android:layout_width="24sp"
-                android:layout_height="27sp"
-                android:layout_marginEnd="40sp"
-                android:layout_marginTop="8sp"
-                android:layout_marginBottom="8sp"
-                app:srcCompat="@drawable/ic_equalizer"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/stopIcon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
             <ImageView
                 android:id="@+id/stopIcon"
                 android:layout_width="24sp"

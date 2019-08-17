@@ -89,11 +89,11 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Reset incase user returned to main activiy for a new search
+        jobs.clear();
+        titles.clear();
 
-        getJobs().clear();
-        getTitles().clear();
 
-        
         // Default selected country to US - maybe should change this dependent on user's GPS
         selectedCountry = "United States";
 

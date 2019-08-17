@@ -52,23 +52,20 @@
 
             <TextView
                 android:id="@+id/jobsLogo"
-                android:layout_width="wrap_content"
+                android:layout_width="194dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="108dp"
-                android:layout_marginTop="10sp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginBottom="8sp"
-                android:fontFamily="@font/archivo_black"
-                android:text="Search"
+                android:fontFamily="sans-serif-black"
+                android:text="Career Search"
                 android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/statsLogo"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.833" />
+                app:layout_constraintStart_toStartOf="parent" />
 
 
             <ProgressBar
@@ -166,8 +163,8 @@
             <SeekBar
                 android:id="@+id/salarySeekBar"
                 style="@android:style/Widget.DeviceDefault.SeekBar"
-                android:layout_width="241sp"
-                android:layout_height="37dp"
+                android:layout_width="244dp"
+                android:layout_height="34dp"
                 android:layout_marginStart="3dp"
                 android:layout_marginEnd="71dp"
                 android:background="#FFFFFF"
@@ -195,8 +192,8 @@
                 android:layout_width="148sp"
                 android:layout_height="34dp"
 
-                android:layout_marginStart="44dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
                 android:text="$"
                 android:textAlignment="center"
                 android:textColor="@color/colorAccent"
@@ -251,41 +248,45 @@
                 android:id="@+id/internshipCheckBox3"
                 android:layout_width="135sp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginEnd="3dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
                 android:buttonTint="@color/colorPrimaryDark"
-                android:text="Indeed.com"
+                android:text="Indeed"
                 android:textColor="@color/colorAccent"
-                app:layout_constraintEnd_toStartOf="@+id/internshipCheckBox5"
-                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/salarySeekBar"
                 app:layout_constraintTop_toBottomOf="@+id/divider" />
 
             <CheckBox
                 android:id="@+id/internshipCheckBox5"
-                android:layout_width="137sp"
+                android:layout_width="154dp"
                 android:layout_height="32dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
                 android:buttonTint="@color/colorPrimaryDark"
-                android:text="Monster.com"
+                android:text="Monster"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/salaryTextView"
                 app:layout_constraintTop_toBottomOf="@+id/divider" />
 
             <CheckBox
                 android:id="@+id/glassDoorCheckBox"
-                android:layout_width="135sp"
-                android:layout_height="28sp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="152dp"
+                android:layout_width="117dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="216dp"
                 android:buttonTint="@color/colorPrimaryDark"
-                android:text="Glassdoor.com"
+                android:text="Glassdoor"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
-                app:layout_constraintTop_toBottomOf="@+id/internshipCheckBox5" />
+                app:layout_constraintTop_toBottomOf="@+id/internshipCheckBox3" />
 
             <CheckBox
                 android:id="@+id/internshipCheckBox2"
@@ -306,20 +307,17 @@
             <Button
                 android:id="@+id/button"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="96dp"
+                android:layout_width="wrap_content"
                 android:layout_height="54sp"
-                android:layout_marginStart="146dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="142dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="162dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="162dp"
                 android:background="@color/colorAccent"
                 android:text="@android:string/search_go"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/glassDoorCheckBox" />
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
 
             <Spinner
                 android:id="@+id/countrySpinner"
@@ -399,26 +397,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/divider2"
                 app:srcCompat="@drawable/ic_dollar_currency_symbol" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="26sp"
-                android:layout_height="34sp"
-                android:layout_marginStart="32sp"
-                android:layout_marginTop="112sp"
-                android:visibility="invisible"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5"
-                app:srcCompat="@drawable/ic_earth" />
-
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="26sp"
                 android:layout_height="34sp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="76dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView5"
-                app:layout_constraintHorizontal_bias="1.0"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/internshipCheckBox3"
                 app:layout_constraintStart_toStartOf="@+id/imageView5"
                 app:layout_constraintTop_toBottomOf="@+id/imageView5"
                 app:srcCompat="@drawable/ic_www" />
