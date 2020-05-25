@@ -1,1 +1,1 @@
-![French UI](https://github.com/NickJoannette/Job-Posting-Aggregator-For-Android/blob/master/ScreenShot.jpg){:height="50%" width="50%"}
+![French UI](https://github.com/NickJoannette/Job-Posting-Aggregator-For-Android/blob/master/ScreenShot.jpg){:height="25%" width="25%"}
